@@ -1,7 +1,7 @@
 angular.module('weddingApp', [])
   .controller('CountdownController', ['$scope', '$interval',
     function ($scope, $interval) {
-      var weddingDay = new Date(2015, 10, 21, 15); // November 21, 2015 3:00 PM
+      var WEDDING_DAY = new Date(Date.UTC(2015, 10, 21, 21)); // November 21, 2015 3:00 PM CST
       var now,
           timeLeft,
           secondsLeft,
@@ -10,7 +10,7 @@ angular.module('weddingApp', [])
 
       $interval( function () {
         now = new Date();
-        timeLeft = weddingDay - now;
+        timeLeft = WEDDING_DAY - now;
         secondsLeft = Math.floor(timeLeft/1000);
         minutesLeft = Math.floor(secondsLeft/60);
         hoursLeft = Math.floor(minutesLeft/60);
