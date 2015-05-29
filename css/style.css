@@ -1,0 +1,17 @@
+body {
+  /* Background pattern from subtlepatterns.com */
+  background-image: url('http://i.imgur.com/djNDz3W.png');
+
+  color: #D4AF37;
+  font-family: 'Poiret One';
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.counter {
+  font-size: 2em;
+}
